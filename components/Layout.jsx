@@ -1,21 +1,17 @@
 import Link from 'next/link';
 import { Children } from 'react';
 
+import Nav from '../components/Nav';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+
 const Layout = ({ children }) => {
     return (
-        <div>
-            <header>
-                <ul>
-                    <li><Link href="/">TOP</Link></li>
-                    <li><Link href="/about">About</Link></li>
-                </ul>
-            </header>
-            <main>
-                {children}
-            </main>
-            <footer>
-                <p>(c) minimum sample</p>
-            </footer>
+        <div id="root">
+            <Nav />
+            <Header />
+            {children}
+            <Footer />
         </div>
     );
 }

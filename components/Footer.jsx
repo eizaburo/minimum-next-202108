@@ -3,7 +3,7 @@ import Link from 'next/link';
 const Footer = () => {
     return (
         <footer>
-            <p>(c) minimum sample</p>
+            {String.fromCharCode(169) + "Minium sample."} 
         </footer>
     );
 }

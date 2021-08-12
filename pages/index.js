@@ -1,10 +1,7 @@
 import Link from 'next/link';
-
-import Header from '../components/Header';
-import Footer from '../components/Footer';
-import Layout from '../components/Layout';
-
 import Head from 'next/head';
+
+import Layout from '../components/Layout';
 
 const text = {
   title: "TOP Page",
@@ -14,8 +11,16 @@ const text = {
 const Home = () => {
   return (
     <Layout>
-      <h3>TOP Page</h3>
-      <p><Link href="/about">Aboutへ</Link></p>
+      <Head>
+        <title>TOP</title>
+      </Head>
+      <main>
+        <section>
+          <h2>Welcome</h2>
+          <p>ようそこ。最小Webページへ。</p>
+          <img src="https://source.unsplash.com/random/300x300" alt="testimage" />
+        </section>
+      </main>
     </Layout>
   );
 }
