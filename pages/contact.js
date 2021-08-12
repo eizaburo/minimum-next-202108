@@ -21,7 +21,7 @@ const Contact = () => {
         setBtnDisabled(true);
 
         //API連携
-        const base_url = "https://script.google.com/macros/s/AKfycbxN3NPmE0s29jnJmv-wogE8oPxY6fS7NQDH77SpKlsPgo5BBgLQRFKJ8UAyGGkFfmgo/exec";
+        const base_url = "https://script.google.com/macros/s/{deploy_id}}/exec";
         fetch(base_url, {
             method: "post",
             headers: {
